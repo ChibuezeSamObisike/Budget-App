@@ -13,7 +13,7 @@ import { UNCATEGORIZED_BUDGET_ID } from "./contexts/BudgetContext";
 function App() {
   const [showAddBudgetModal, setShowAddBudgetModal] = useState(false);
   const [showAddExpenseModal, setShowAddExpenseModal] = useState(false);
-  const [viewExpensesModalBudgetId, setViewExpensesModalBudgetId] = useState();
+  const [viewExpensesModalBudgetId, setViewExpensesModalBudgetId] = useState(null);
   const [addExpenseModalBudgetId, setAddExpenseModalBudgetId] = useState();
   const { budgets, expenses, getBudgetExpenses } = useBudgets();
 
